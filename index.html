@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo - Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="nuageux.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Informations Météo</h1>
+        <form id="weatherForm">
+            <input type="text" id="cityInput" placeholder="Entrez le nom de la ville" required>
+            <button type="submit">Rechercher</button>
+        </form>
+        <div id="weatherInfo" class="weather-info">
+            <div class="weather-card">
+                <h2 id="cityName">Ville</h2>
+                <p id="temperature">Température: --°C</p>
+                <p id="description">Description: --</p>
+                <p id="humidity">Humidité: --%</p>
+                <p id="wind">Vent: -- m/s</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
